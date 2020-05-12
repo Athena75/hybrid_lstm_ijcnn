@@ -1,0 +1,8 @@
+*.pyc
+*.csv
+*.json
+*.pkl
+*.zip
+*.xlsb
+*.html
+.ipynb_checkpoints/
