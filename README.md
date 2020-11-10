@@ -6,7 +6,7 @@ Here is the explantation of folder strucure:
 - **data**: Folder for storing subset data for experiments. It includes both raw data and processed data for temporary use.
 - **notebook**: Storing all notebooks includeing EDA and modeling stage.
 
-### /src : Source Code:
+### src : Source Code:
 * main.py : main program It executes the following tasks:
 loads dataset located in /data/raw
 split the dataset into train and test subsets
@@ -35,13 +35,13 @@ cd src
 python main.py
 ```
 
-### /results
+### results
 It includes:
 
 * Binary model + model metadata such as date, size of training data.
 * Visualizations
 
-### /data:
+### data:
 It is composed of:
 * raw: Storing the raw result which is generated from "preparation" folder code. My practice is storing a local subset copy rather than retrieving data from remote data store from time to time. It guarantees you have a static dataset for rest of action. Furthermore, we can isolate from data platform unstable issue and network latency issue.
 * processed: To shorten model training time, it is a good idea to persist processed data. It should be generated from "processing" folder.
